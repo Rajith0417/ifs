@@ -1,0 +1,42 @@
+.card-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px #88888844;
+  padding: 10px;
+  margin: 10px;
+  font-family: Lato;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .published {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: green;
+
+    &--not {
+      background: red;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: right;
+  }
+}

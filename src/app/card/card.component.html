@@ -1,0 +1,15 @@
+<div class="card-container">
+  <div class="top">
+    <span class="published" [class.published--not]="!isPublished"></span>
+    <div class="title">
+      {{ title }}
+    </div>
+
+    <div class="description">
+      {{ description }}
+    </div>
+  </div>
+  <div class="bottom">
+    <button (click)="sendTitleToParent()" class="button">Select Post</button>
+  </div>
+</div>
