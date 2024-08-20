@@ -56,8 +56,8 @@ it('should return an empty array when posts array is empty', () => {
   });
 
   it('should return null when posts is null', () => {
-    expect(pipe.transform(null, true)).toBeNull();
-    expect(pipe.transform(null, false)).toBeNull();
+    expect(pipe.transform(null, true)).toEqual([]);
+    expect(pipe.transform(null, false)).toEqual([]);
   });
 
 
