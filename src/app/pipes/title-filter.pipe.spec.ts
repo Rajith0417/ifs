@@ -5,6 +5,10 @@ describe('TitleFilterPipe', () => {
 
   let pipe: TitleFilterPipe;
 
+  beforeEach(() => {
+    pipe = new TitleFilterPipe();
+  });
+
   it('create an instance', () => {
     expect(pipe).toBeTruthy();
   });
